@@ -9,8 +9,10 @@
 [[ -o INTERACTIVE && -t 2 ]] && {
 
 SAYINGS=(
-    "So long and thanks for all the fish.\n  -- Douglas Adams"
-    "Good morning! And in case I don't see ya, good afternoon, good evening and goodnight.\n  --Truman Burbank"
+    "Bye bud\n - $USER@$HOSTNAME"
+    "Sayonara son\n - $USER@$HOSTNAME"
+    "Ciao cuz\n - $USER@$HOSTNAME"
+    "Seeya scrub\n - $USER@$HOSTNAME"
 )
 
 # Print a randomly-chosen message:
