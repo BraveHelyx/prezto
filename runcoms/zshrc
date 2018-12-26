@@ -17,7 +17,7 @@ if [[ -s "$HOME/.zalias" ]]; then
 fi
 
 ## Source customizations
-if [[ -s "$HOME/.zcustom" ]]; then
-    source "$HOME/.zcustom"
+if [[ -s "$HOME/.zenviron" ]]; then
+    source "$HOME/.zenviron"
 fi
 
