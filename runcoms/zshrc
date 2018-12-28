@@ -21,3 +21,5 @@ if [[ -s "$HOME/.zenviron" ]]; then
     source "$HOME/.zenviron"
 fi
 
+## Added by fzf install script.
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
