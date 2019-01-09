@@ -10,16 +10,26 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-## Source the aliases
-if [[ -s "$HOME/.zalias" ]]; then
-    source "$HOME/.zalias"
-fi
-
-## Source customizations
+## Source zenviron and zalias (source in zenviron)
 if [[ -s "$HOME/.zenviron" ]]; then
     source "$HOME/.zenviron"
 fi
 
-## Added by fzf install script.
+## Source fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPS="--extended"
+
+## Source z
+if [[ -f "$HOME/.zfzfzf/z/z.sh" ]]; then
+    source "$HOME/.zfzfzf/z/z.sh" && echo "Sourced z"
+fi
+
+## Source fz (only after sourcing z and fzf)
+if [[ -f "$HOME/.zfzfzf/fz/fz.sh" ]]; then
+    source "$HOME/.zfzfzf/fz/fz.sh" && echo "Sourced fz"
+fi
+
+## zsh completions
+fpath=("$HOME/.dotfiles/mod/zsh/zsh-completions/src" $fpath)
+rm -f ~/.zcompdump
+
