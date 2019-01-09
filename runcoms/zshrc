@@ -17,7 +17,6 @@ fi
 
 ## Source fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPS="--extended"
 
 ## Source z
 if [[ -f "$HOME/.zfzfzf/z/z.sh" ]]; then
