@@ -44,7 +44,6 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'prompt' \
   'autosuggestions' \
-  'tmux' \
   'docker' \
   'pacman' \
   'homebrew'
