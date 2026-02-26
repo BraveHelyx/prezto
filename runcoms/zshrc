@@ -16,4 +16,6 @@ fi
 [ -f ~/.zfzfzf/z/z.sh ] && source ~/.zfzfzf/z/z.sh
 [ -f ~/.zfzfzf/fz/fz.sh ] && source ~/.zfzfzf/fz/fz.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
